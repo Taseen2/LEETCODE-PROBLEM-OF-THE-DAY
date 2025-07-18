@@ -38,7 +38,7 @@ public:
         }
 
         long long result = LLONG_MAX;
-        for (int i = n - 1; i < 2 * n; i++) {
+        for (int i = n - 1; i < 2 * n; i++) { // Did not understand last part why 2n not 2n-1 ? 
             result = min(result, leftMinSum[i] - rightMaxSum[i + 1]);
         }
 
