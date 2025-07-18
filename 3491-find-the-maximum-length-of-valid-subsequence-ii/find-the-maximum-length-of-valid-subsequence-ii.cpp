@@ -9,7 +9,6 @@ public:
                 int pos = (j - mod + k) % k;
                 dp[mod] = dp[pos] + 1;
             }
-
             for (int val : dp) {
                 res = max(res, val);
             }
